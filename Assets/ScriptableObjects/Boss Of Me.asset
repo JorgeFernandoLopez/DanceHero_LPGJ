@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SoundData
   animationName: GangnamStyle
   songName: Boss Of Me
+  noteChart: {fileID: 4900000, guid: 866e89763d4ea604da5fdd3584b4c123, type: 3}
+  speed: 300

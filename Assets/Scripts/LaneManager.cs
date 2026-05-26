@@ -1,20 +1,38 @@
 using UnityEngine;
-
+ 
 public class LaneManager : MonoBehaviour
 {
     [SerializeField]
+    private string showAnimationName = "Show";
+    [SerializeField]
+    private string hideAnimationName = "Hide";
+    [SerializeField]
+    private Animator animator;
+    [SerializeField]
     private Lane[] lanes;
+    private bool isHidden = true;
     public Lane GetLane(int index)
     {
-        if(index<0 || index >= lanes.Length)
+        if (index < 0 || index >= lanes.Length)
         {
             Debug.LogWarning("Lane index out of range: " + index);
-                return lanes[0];   
-         }
+            return lanes [0];
+        }
         return lanes[index];
     }
-    public int GetLanesCount()
+    public int GetLaneCount()
     {
         return lanes.Length;
+    }
+    public void ShowLanes()
+    {
+        animator.Play(showAnimationName);
+        isHidden = false;
+    }
+    public void HideLanes()
+    {
+        if (isHidden) return;
+        animator.Play(hideAnimationName);
+        isHidden = true;
     }
 }
