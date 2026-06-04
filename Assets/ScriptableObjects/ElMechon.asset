@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a93a460b41234b458835846fafb8db4, type: 3}
-  m_Name: Panuelito
+  m_Name: ElMechon
   m_EditorClassIdentifier: Assembly-CSharp::SoundData
-  animationName: Macarena
-  songName: Panuelito
-  noteChart: {fileID: 4900000, guid: 1088750d611fcfd4dadf43e2501a413f, type: 3}
+  animationName: ElMechon
+  songName: ElMechon
+  noteChart: {fileID: 4900000, guid: 1d743a9b38c90214f8b1dbb1c608dc2c, type: 3}
   speed: 300
